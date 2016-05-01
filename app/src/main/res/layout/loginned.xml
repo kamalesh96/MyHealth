@@ -1,0 +1,390 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:scrollbars="vertical"
+
+
+
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/male_nurse"
+
+        android:alpha=".9"
+
+
+        >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:layout_centerHorizontal="true"
+            android:text="Enter Patient Readings:"
+            android:textSize="30sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/date_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom = "20dp"
+            android:scrollbars="vertical"
+
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="10dp"
+
+            android:gravity="center"
+            android:layout_below="@id/header"
+            android:textSize="20sp"
+            android:hint="Enter Today's date as dd/mm/yyyy" />
+
+        <TextView
+            android:id="@+id/text_view1"
+            android:text="Hematocrit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/date_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/text_view2"
+            android:layout_alignEnd="@+id/text_view2"
+            android:layout_alignBottom="@+id/spinner1" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_button"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view1" />
+
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:text="Haeomoglobin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/spinner1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner2"
+            android:layout_toLeftOf="@+id/spinner3"
+            android:layout_toStartOf="@+id/spinner3" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view2"
+            android:layout_below="@+id/spinner1" />
+
+
+        <TextView
+            android:id="@+id/text_view3"
+            android:text="Transferrin saturation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/spinner2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner3" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view3"
+            android:layout_below="@+id/spinner2" />
+
+
+        <TextView
+            android:id="@+id/text_view4"
+            android:text="Albumin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/spinner3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner4"
+            android:layout_toLeftOf="@+id/spinner3"
+            android:layout_toStartOf="@+id/spinner3" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view4"
+            android:layout_below="@+id/spinner3" />
+
+
+        <TextView
+            android:id="@+id/text_view5"
+            android:text="Phosphorus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/spinner4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner5"
+            android:layout_toLeftOf="@+id/spinner4"
+            android:layout_toStartOf="@+id/spinner4" />
+
+        <Spinner
+            android:id="@+id/spinner5"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view5"
+            android:layout_below="@+id/spinner4" />
+
+        <TextView
+            android:id="@+id/text_view6"
+            android:text="Calcium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/spinner5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner6"
+            android:layout_toLeftOf="@+id/spinner5"
+            android:layout_toStartOf="@+id/spinner5" />
+
+        <Spinner
+            android:id="@+id/spinner6"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view6"
+            android:layout_below="@+id/spinner5" />
+
+
+        <TextView
+            android:id="@+id/text_view7"
+            android:text="Blood Urea Nitrogen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/spinner6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner7"
+            android:layout_toLeftOf="@+id/spinner6"
+            android:layout_toStartOf="@+id/spinner6" />
+
+        <Spinner
+            android:id="@+id/spinner7"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view7"
+            android:layout_below="@+id/spinner6" />
+
+        <TextView
+            android:id="@+id/text_view8"
+            android:text="Creatinine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/spinner7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner8"
+            android:layout_toLeftOf="@+id/spinner7"
+            android:layout_toStartOf="@+id/spinner7" />
+
+        <Spinner
+            android:id="@+id/spinner8"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view8"
+            android:layout_below="@+id/spinner7" />
+
+
+        <TextView
+            android:id="@+id/text_view9"
+            android:text="Potassium"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+
+
+            android:layout_below="@+id/spinner8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner9"
+            android:layout_toLeftOf="@+id/spinner8"
+            android:layout_toStartOf="@+id/spinner8" />
+
+        <Spinner
+            android:id="@+id/spinner9"
+            android:visibility="invisible"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+
+
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view9"
+            android:layout_below="@+id/spinner8" />
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:layout_alignTop="@+id/text_view9"
+            android:layout_centerHorizontal="true">
+        </Button>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,260 @@
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    >
+
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/male_nurse"
+        android:id="@+id/rl"
+
+        android:alpha=".9"
+
+        android:gravity="center|top"
+        >
+
+        <TextView
+            android:id="@+id/text_id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:text="Enter your details:\n"
+
+            android:textColorHighlight="@android:color/primary_text_dark"
+            android:scrollbars="vertical"
+            android:textSize="35dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:scrollbars="vertical"
+
+            android:singleLine="true"
+            android:lines="1"
+
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom = "20dp"
+
+            android:gravity="center"
+            android:layout_below="@id/text_id2"
+            android:textSize="20sp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom = "20dp"
+            android:scrollbars="vertical"
+
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="10dp"
+
+            android:gravity="center"
+            android:layout_below="@id/name"
+            android:textSize="20sp"
+            android:hint="Age" />
+
+        <EditText
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom = "20dp"
+            android:scrollbars="vertical"
+
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="10dp"
+
+            android:gravity="center"
+            android:layout_below="@id/age"
+            android:textSize="20sp"
+            android:hint="Enter your Birth date as dd/mm/yyyy" />
+
+
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:text="     Blood Group       "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size"
+            android:scrollbars="vertical"
+
+
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/spinner2"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_below="@+id/LinearLayout1"
+            android:scrollbars="vertical"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom = "20dp"
+            android:paddingBottom="2dp"
+            android:layout_toRightOf="@+id/text_view2"
+
+             />
+
+        <TextView
+            android:id="@+id/text_id3"
+            android:layout_below="@id/text_view2"
+            android:scrollbars="vertical"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Choose your Gender:"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            style="?android:attr/spinnerItemStyle"
+
+            android:textSize="20sp"
+
+            android:layout_marginBottom="2dp"/>
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_id3"
+            android:scrollbars="vertical"
+
+            android:layout_marginBottom = "20dp"
+
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/radioButton"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_weight="1"
+
+                android:id="@+id/radioButton2"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/addr"
+            android:hint="Enter your address"
+            android:layout_marginBottom = "20dp"
+
+            android:layout_below="@+id/radioGroup"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="2"
+            android:gravity="center"
+
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+        />
+
+
+        <EditText
+            android:id="@+id/mail_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom = "20dp"
+            android:scrollbars="vertical"
+
+            android:singleLine="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+
+
+            android:drawablePadding="10dp"
+
+            android:gravity="center"
+            android:layout_below="@id/addr"
+            android:textSize="20sp"
+            android:hint="Enter your email id" />
+
+        <EditText
+            android:id="@+id/etnumber"
+
+            android:scrollbars="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_marginBottom = "20dp"
+            android:textSize="20sp"
+            android:hint="Enter your Contact Number"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/mail_text_box"
+            android:digits="0123456789+"
+
+            />
+
+        <Button
+            android:id="@+id/btnButton3"
+            android:layout_width="375px"
+            android:layout_height="95px"
+            android:text="Submit"
+            android:layout_marginBottom = "10dp"
+            android:layout_below="@+id/etnumber"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
